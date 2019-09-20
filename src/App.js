@@ -28,7 +28,7 @@ e.preventDefault()
              if (arr[i] > arr[i + 1])
               {
                  let temp = arr[i];
-                  // temp => a => b => temp 
+                  // temp => a => b => temp i.e.swapped
                  arr[i] = arr[i + 1];
 
                  arr[i+1] = temp;
@@ -42,7 +42,7 @@ e.preventDefault()
   
      is_Sorted = false;
   
-     for (let j = arr.length - 1; j > 0; j--){
+     for (let j = arr.length - 1; j > 0; j--){//same but in reverse
              if (arr[j-1] > arr[j])
               {
                  let temp = arr[j];
@@ -124,11 +124,43 @@ After Some Drinks:{(this.state.result).join()}
 <p>(1 4 [2 0] 5 2 8) ? (1 4 [0 2] 5 2 8), Swap since 2 > 0</p>
 <p>(1 [4 0] 2 5 2 8) ? (1 [0 4] 2 5 2 8), Swap since 4 > 0</p>
 <p>([1 0] 4 2 5 2 8) ? ([0 1] 4 2 5 2 8), Swap since 1 > 0</p>
-<h1>After first backward pass, smallest element of the array will be present at the first index of the array.
-</h1>
+<h1>After first backward pass, smallest element of the array will be present at the first index of the array.</h1>
+</div>
 
-      </div>
-    </div>
+<div className="ralph">
+<img className="gif" src={require('./images/Sorting_shaker_sort_anim.gif')} alt="boohoo"/>
+<img className="gif" src={require('./images/BigO.png')} alt="boohoo"/>
+
+<div>
+  <h1 style={{color: "white", fontSize: 24, fontFamily: "Times"}}>Big O Notation</h1>
+<div id="special">
+<div className="blkBold someSep">Class</div>
+<div className="blu">Sorting Algorithm</div>
+</div>
+<div id="special">
+<p className="blkBold someSep">Data Structure</p><p className="blu">Array</p>
+</div>
+<div id="special">
+<p className="bluBold someSep">Worst-case performance</p><p>O(n^2)</p>
+{/* if i have ten items, worst case scenerio. it will take onehundred times to complete the sort */}
+</div>
+<div id="special">
+<p className="bluBold someSep">Best-case performance</p><p>O(n)</p>
+</div>
+<div id="special">
+<p className="bluBold someSep">Average performance</p><p></p>
+</div>
+<div id="special">
+<p className="bluBold someSep">Worst-case space complexity</p><p>O(1)</p>
+{/* infinite */}
+</div></div>
+
+</div>
+<div className="conclusion">
+<h2 style={{color: "white", fontSize: 36, fontFamily: "Times"}}>In Conclusion</h2>
+<p style={{color: "white", fontSize: 16, fontFamily: "Times"}}>This sorting Algorithm is not very efficient when it comes to larger inputs, or if the input isnt already somewhat sorted.
+I give it a 2/10</p>
+</div></div>
   );
 }}
 
