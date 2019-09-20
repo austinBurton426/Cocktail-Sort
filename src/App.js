@@ -148,7 +148,7 @@ After Some Drinks:{(this.state.result).join()}
 <p className="bluBold someSep">Best-case performance</p><p>O(n)</p>
 </div>
 <div id="special">
-<p className="bluBold someSep">Average performance</p><p></p>
+<p className="bluBold someSep">Average performance</p><p>O(n^2)</p>
 </div>
 <div id="special">
 <p className="bluBold someSep">Worst-case space complexity</p><p>O(1)</p>
